@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.QuranFragment">
+
+    <ImageView
+        android:id="@+id/logo_hadeth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/hadeth_logo"
+        android:layout_marginHorizontal="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/elmasrri"
+        android:padding="8dp"
+        android:text="الحديث"
+
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        tools:ignore="RtlCompat"
+        app:layout_constraintTop_toBottomOf="@id/logo_hadeth" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#B6925F"
+        app:layout_constraintTop_toBottomOf="@id/logo_hadeth" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#B6925F"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_hadeeth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+
+        tools:listitem="@layout/hadeth_item" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

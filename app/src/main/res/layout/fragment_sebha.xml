@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.SebhaFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rotation_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/head_sebha"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/head_sebha_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/body_sebha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:src="@drawable/body_sebha_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/head_sebha"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="عدد التسبيحات"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/elmasrri"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@id/rotation_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/text_color"
+        />
+
+    <TextView
+        android:text="0"
+        android:id="@+id/counter_sebha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/num"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/text_color"
+        tools:text="30"
+        android:padding="10dp"
+        android:background="@drawable/counter_back" />
+
+    <Button
+        android:text="سبحان الله"
+        android:id="@+id/sebha_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/sebha_back_color"
+        app:layout_constraintTop_toBottomOf="@id/counter_sebha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        tools:text="سبحان الله"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/elmasrri"
+        android:textColor="@color/text_color"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

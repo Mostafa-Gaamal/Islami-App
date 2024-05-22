@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="nav_back">#141A2E</color>
+    <color name="text_color">#F8F8F8</color>
+    <color name="verses_color">#FACC1D</color>
+    <color name="sebha_back_color">#FACC1D</color>
+    <color name="nav_selection">#FACC1D</color>
+    <color name="counter_back">#141A2E</color>
+    <color name="background_read">#141A2E</color>
+
+
+</resources>

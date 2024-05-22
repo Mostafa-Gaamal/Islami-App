@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="nav_back">#B7935F</color>
+    <color name="text_color">#242424</color>
+    <color name="verses_color">#242424</color>
+    <color name="sebha_back_color">#B7935F</color>
+    <color name="nav_selection">#FF000000</color>
+    <color name="counter_back">#CCB7935F</color>
+    <color name="background_read">#F8F8F8</color>
+
+
+
+
+
+
+</resources>
